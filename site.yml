@@ -8,3 +8,8 @@
           - podman
           - nginx
         state: present
+    - name: Start and enable nginx service
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
