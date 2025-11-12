@@ -52,3 +52,23 @@
           POSTGRES_HOST_AUTH_METHOD: trust
         volumes:
           - /var/lib/microservice-movies/postgres:/var/lib/postgresql/data:Z
+    - name: Deploy frontend files to nginx web root
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/st-microservice-frontend/"
+        dest: /usr/share/nginx/html/
+        owner: root
+        group: root
+        mode: '0644'
+        recurse: yes
+      register: frontend_deploy
+
+    - name: Ensure correct SELinux context on nginx web root (if SELinux enabled)
+      ansible.builtin.command:
+        cmd: restorecon -R -v /usr/share/nginx/html || true
+      changed_when: false
+
+    - name: Restart nginx if frontend changed
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+      when: frontend_deploy.changed
