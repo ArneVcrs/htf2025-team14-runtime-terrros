@@ -18,7 +18,6 @@
         name: quay.io/arnevcrs/microservice-movies:latest
         source: pull
         state: present
-
     - name: Run movies backend container
       containers.podman.podman_container:
         name: microservice-movies-backend
