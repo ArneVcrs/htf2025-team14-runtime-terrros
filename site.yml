@@ -60,11 +60,6 @@
       delegate_to: localhost
       run_once: true
 
-    - name: Ensure correct SELinux context on nginx web root (if SELinux enabled)
-      ansible.builtin.command:
-        cmd: restorecon -R -v /usr/share/nginx/html || true
-      changed_when: false
-
     - name: Restart nginx if frontend changed
       ansible.builtin.service:
         name: nginx
