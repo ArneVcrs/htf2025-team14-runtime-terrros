@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Runtime Terrors</title>
+    <link rel="stylesheet" href="assets/css/movies.css">
+    <script src="assets/js/init.js" type="module" ></script>
 </head>
 <body>
-    <h1>Welcome to Runtime Terrors</h1>
-    <p>Your go-to resource for debugging and fixing runtime errors in your code.</p>
+    <header class="site-header">
+            <div class="header-inner">
+                <h1>Runtime Terrors — Movie Mock</h1>
+                <div class="header-actions">
+                    <button id="add-movie-btn" class="add-movie-btn">+ Add Movie</button>
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <section id="movies" class="movies-section">
+            <div id="movies-grid" class="movies-grid"></div>
+        </section>
+    </main>
+
+        <!-- modal root for add movie form -->
+        <div id="modal-root"></div>
+    
 </body>
 </html>
