@@ -52,15 +52,38 @@
           POSTGRES_HOST_AUTH_METHOD: trust
         volumes:
           - /var/lib/microservice-movies/postgres:/var/lib/postgresql/data:Z
-    - name: Deploy frontend files to nginx web root (rsync from controller)
-      ansible.builtin.synchronize:
-        src: "{{ playbook_dir }}/st-microservice-frontend/"
-        dest: /usr/share/nginx/html/
-        mode: push
-        rsync_opts:
-          - "--delete"
+    - name: Create frontend archive on controller
+      ansible.builtin.command:
+        cmd: tar -C "{{ playbook_dir }}/st-microservice-frontend" -cf /tmp/st-microservice-frontend.tar .
       delegate_to: localhost
+      run_once: true
+
+    - name: Copy frontend archive to remote
+      ansible.builtin.copy:
+        src: /tmp/st-microservice-frontend.tar
+        dest: /tmp/st-microservice-frontend.tar
+        mode: '0644'
+
+    - name: Extract frontend archive on remote into nginx web root
+      ansible.builtin.unarchive:
+        src: /tmp/st-microservice-frontend.tar
+        dest: /usr/share/nginx/html/
+        remote_src: yes
+        extra_opts:
+          - "--no-same-owner"
       register: frontend_deploy
+
+    - name: Remove remote frontend archive
+      ansible.builtin.file:
+        path: /tmp/st-microservice-frontend.tar
+        state: absent
+
+    - name: Remove controller frontend archive
+      ansible.builtin.file:
+        path: /tmp/st-microservice-frontend.tar
+        state: absent
+      delegate_to: localhost
+      run_once: true
 
     - name: Ensure correct SELinux context on nginx web root (if SELinux enabled)
       ansible.builtin.command:
