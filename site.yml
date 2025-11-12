@@ -27,31 +27,6 @@
         publish:
           - '8080:80' 
         restart_policy: always
-    - name: Pull Postgres image
-      containers.podman.podman_image:
-        name: docker.io/library/postgres:14
-        pull: true
-        state: present
-    - name: Ensure Postgres data directory exists
-      ansible.builtin.file:
-        path: /var/lib/microservice-movies/postgres
-        state: directory
-        owner: root
-        group: root
-        mode: '0700'
-    - name: Run Postgres container (no auth)
-      containers.podman.podman_container:
-        name: microservice-postgres
-        image: docker.io/library/postgres:14
-        state: started
-        detach: true
-        publish:
-          - '5000:5432'
-        restart_policy: always
-        env:
-          POSTGRES_HOST_AUTH_METHOD: trust
-        volumes:
-          - /var/lib/microservice-movies/postgres:/var/lib/postgresql/data:Z
     - name: Create frontend archive on controller
       ansible.builtin.command:
         cmd: tar -C "{{ playbook_dir }}/st-microservice-frontend" -cf /tmp/st-microservice-frontend.tar .
