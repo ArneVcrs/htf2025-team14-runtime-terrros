@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "st-microservice-movies", "st-microservice-movies", "{AE0B6439-61A7-3DF3-D74D-419CF138D4A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B9E6D7AD-35CE-B24E-6C55-9EF3132EFE61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Application", "st-microservice-movies\src\Movies.Application\Movies.Application.csproj", "{F3D8BE1F-EAA1-F115-463F-AE3BAECC47B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Domain", "st-microservice-movies\src\Movies.Domain\Movies.Domain.csproj", "{E554D75D-B443-598A-51FF-BCB350744AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Infrastructure", "st-microservice-movies\src\Movies.Infrastructure\Movies.Infrastructure.csproj", "{EC2A22C1-2CE1-248C-B20B-97B46878D18D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Howestprime.Movies.Main", "st-microservice-movies\src\Movies.Main\Howestprime.Movies.Main.csproj", "{18B59326-50A1-50B0-04B5-C1EB3B7D5ECE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3D8BE1F-EAA1-F115-463F-AE3BAECC47B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D8BE1F-EAA1-F115-463F-AE3BAECC47B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D8BE1F-EAA1-F115-463F-AE3BAECC47B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D8BE1F-EAA1-F115-463F-AE3BAECC47B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E554D75D-B443-598A-51FF-BCB350744AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E554D75D-B443-598A-51FF-BCB350744AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E554D75D-B443-598A-51FF-BCB350744AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E554D75D-B443-598A-51FF-BCB350744AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC2A22C1-2CE1-248C-B20B-97B46878D18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2A22C1-2CE1-248C-B20B-97B46878D18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2A22C1-2CE1-248C-B20B-97B46878D18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2A22C1-2CE1-248C-B20B-97B46878D18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B59326-50A1-50B0-04B5-C1EB3B7D5ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B59326-50A1-50B0-04B5-C1EB3B7D5ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B59326-50A1-50B0-04B5-C1EB3B7D5ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B59326-50A1-50B0-04B5-C1EB3B7D5ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9E6D7AD-35CE-B24E-6C55-9EF3132EFE61} = {AE0B6439-61A7-3DF3-D74D-419CF138D4A8}
+		{F3D8BE1F-EAA1-F115-463F-AE3BAECC47B5} = {B9E6D7AD-35CE-B24E-6C55-9EF3132EFE61}
+		{E554D75D-B443-598A-51FF-BCB350744AC4} = {B9E6D7AD-35CE-B24E-6C55-9EF3132EFE61}
+		{EC2A22C1-2CE1-248C-B20B-97B46878D18D} = {B9E6D7AD-35CE-B24E-6C55-9EF3132EFE61}
+		{18B59326-50A1-50B0-04B5-C1EB3B7D5ECE} = {B9E6D7AD-35CE-B24E-6C55-9EF3132EFE61}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A9B0916-5BAC-412D-9F02-927320CA5913}
+	EndGlobalSection
+EndGlobal
