@@ -52,14 +52,14 @@
           POSTGRES_HOST_AUTH_METHOD: trust
         volumes:
           - /var/lib/microservice-movies/postgres:/var/lib/postgresql/data:Z
-    - name: Deploy frontend files to nginx web root
-      ansible.builtin.copy:
+    - name: Deploy frontend files to nginx web root (rsync from controller)
+      ansible.builtin.synchronize:
         src: "{{ playbook_dir }}/st-microservice-frontend/"
         dest: /usr/share/nginx/html/
-        owner: root
-        group: root
-        mode: '0644'
-        recurse: yes
+        mode: push
+        rsync_opts:
+          - "--delete"
+      delegate_to: localhost
       register: frontend_deploy
 
     - name: Ensure correct SELinux context on nginx web root (if SELinux enabled)
