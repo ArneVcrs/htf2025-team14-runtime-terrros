@@ -13,3 +13,18 @@
         name: nginx
         state: started
         enabled: yes
+    - name: Pull backend image from quay.io
+      containers.podman.podman_image:
+        name: quay.io/arnevcrs/microservice-movies:latest
+        source: pull
+        state: present
+
+    - name: Run movies backend container
+      containers.podman.podman_container:
+        name: microservice-movies-backend
+        image: quay.io/arnevcrs/microservice-movies:latest
+        state: started
+        detach: true
+        publish:
+          - '8080:80' 
+        restart_policy: always

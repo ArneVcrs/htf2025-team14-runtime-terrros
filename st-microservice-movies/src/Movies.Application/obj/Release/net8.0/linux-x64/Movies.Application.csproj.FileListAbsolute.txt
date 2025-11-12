@@ -1,0 +1,16 @@
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/bin/Release/net8.0/linux-x64/Movies.Application.deps.json
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/bin/Release/net8.0/linux-x64/Movies.Application.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/bin/Release/net8.0/linux-x64/Movies.Application.pdb
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/bin/Release/net8.0/linux-x64/Movies.Domain.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/bin/Release/net8.0/linux-x64/Movies.Domain.pdb
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.csproj.AssemblyReference.cache
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.AssemblyInfoInputs.cache
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.AssemblyInfo.cs
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.csproj.CoreCompileInputs.cache
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.sourcelink.json
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.csproj.CopyComplete
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/refint/Movies.Application.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/Movies.Application.pdb
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Application/obj/Release/net8.0/linux-x64/ref/Movies.Application.dll

@@ -8,8 +8,3 @@ public interface IAllMoviesQuery
     Task<IReadOnlyList<MovieData>> Fetch(Expression<Func<MovieData, bool>> filter );
 }
 
-public interface IAllMovieEventsQuery
-{
-    Task<IReadOnlyList<MovieEventData>> Fetch(Expression<Func<MovieEventData, bool>> filter);
-}
-

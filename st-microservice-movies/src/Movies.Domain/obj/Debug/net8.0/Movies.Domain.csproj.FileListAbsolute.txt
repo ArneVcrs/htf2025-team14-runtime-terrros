@@ -1,0 +1,13 @@
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/bin/Debug/net8.0/Movies.Domain.deps.json
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/bin/Debug/net8.0/Movies.Domain.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/bin/Debug/net8.0/Movies.Domain.pdb
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.csproj.AssemblyReference.cache
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.AssemblyInfoInputs.cache
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.AssemblyInfo.cs
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.csproj.CoreCompileInputs.cache
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.sourcelink.json
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/refint/Movies.Domain.dll
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/Movies.Domain.pdb
+/mnt/c/Users/a1rne/Documents/dev/htf2025/st-microservice-movies/src/Movies.Domain/obj/Debug/net8.0/ref/Movies.Domain.dll
