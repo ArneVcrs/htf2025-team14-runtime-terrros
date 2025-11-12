@@ -16,7 +16,7 @@
     - name: Pull backend image from quay.io
       containers.podman.podman_image:
         name: quay.io/arnevcrs/microservice-movies:latest
-        source: pull
+        pull: true
         state: present
     - name: Run movies backend container
       containers.podman.podman_container:
