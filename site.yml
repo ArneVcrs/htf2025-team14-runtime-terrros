@@ -1,0 +1,10 @@
+---
+- hosts: web
+  become: true
+  tasks:
+    - name: Install podman and nginx
+      ansible.builtin.dnf:
+        name:
+          - podman
+          - nginx
+        state: present
